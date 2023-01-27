@@ -1,111 +1,142 @@
 # Ex-06-Book-Cover-Design
 
-Design Steps:
+
+
+# Design Steps:
 Step 1:
-Create a new Django project and app.
-
+Clone the GitHub repository and create a Django admin interface.
 Step 2:
-Create a static file directory and mention the changes in settings.
+Write HTML and CSS Code for designing book cover page and execute them.
 
-Step 3:
-Make a new folder templates inside your app and create a html and map them using views and url.
 
-Step 4:
-Write down the code for book cover using HTML and CSS.
 
-Step 5:
-Add images and other contents using CSS record a screenshot of it.
 
-PROGRAM:
-HTML:
-{% load static %}
-
+# CODE:
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Web Development Technologies</title>
-        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+         <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0">
+         <style>
+
+        .bookpage{
+            width: 400px;
+            height: 600px;
+            background-color: #3d3a3a;
+            color:white;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url(/static/images/book.png);
+            background-size: cover;
+        }
+            
+
+        .toptext{
+            color:white;
+
+        }
+
+        
+        .tophr{
+            width:140px;
+        }
+        .author{
+            color: white;
+            display: inline;
+            position: relative;
+            color:lightblue;
+            top:169px;
+            
+            font-family:Georgia;
+            font-size: medium;
+        }
+        .booktitle{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            text-align: center;
+            position: relative;
+            top: 30px;
+        
+        }
+        .id {
+            width:400px;
+            position: relative;
+            top:180px;
+            
+        }
+        .publisher{
+            font-size: medium;
+            position: relative;
+            top:132px;
+            left:330px;
+        }
+        .edition{
+            color:yellow;
+            font-size: medium;
+            font-family: Verdana;
+            position:relative;
+            top:85px;
+
+        }
+        .subtitle{
+            font-family:Tahoma;
+            font-size: large;
+            position: relative;
+            top:40px;
+        }
+        .photo{
+            position: relative;
+            top: 135px;
+            left: 260px;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+        }
+        </style>
+        <title>Book Cover Page</title>
     </head>
     <body>
-        <section class="book">
-            <br><br>
-        <span id="top">EXPERT INSIGHT &nbsp;&nbsp;&nbsp;</span>
-            <h1>Responsive Web Design with HTML5 and CSS</h1>
-            <h4>Develop future-proof responsive websites using the latest HTML5 and CSS techniques</h4>
-            <h3>Third Edition</h3>
-            <footer>
-                <div id="HASH" class="blue-msg">
-                    <span>Ben Frain</span>
-                    <span id="end"><u>Packt></u></span>
-                </div>
-            </footer>
-    </section>
+        <div class="bookpage">
+            <div class="toptext">
+                EXPERT INSIGHT
+            </div>
+            <div class="tophr">
+                <hr style="color: red;">
+            </div>
+            <div class="booktitle">
+                <h1>Responsive Web Design With HTML5 and CSS</h1></div>
+            <div class="subtitle">
+                Develop future-proof responsive websites using the latest HTML5 and CSS Techniques
+            </div>
+            <div class="photo">
+                <img src="/static/images/photo.png" width="130" height="145" alt="">
+            </div>
+            <div class="id">
+                <hr style="color: orange;">
+            </div>
+            <div class="author">
+               <p><b>ROHIT JAIN D</b></p>
+            </div>
+            <div class="publisher">
+                Packt>
+            </div>
+            <div class="edition">
+                <b>First Edition</b>
+            </div>
+            
+        </div>
     </body>
 </html>
-
-CSS:
-body{
-    color:rgb(255, 255, 255);
-    font-family: Helvetica, sans-serif;
-    background-color: #333
-}
-
-.book{
-    width: 726px;
-    height:891px;
-    background-color:rgb(0, 0, 0);
-    margin:auto;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size:606px;
-    background-position: bottom 150px center;
-}
-h1{
-    font-size:70px;
-    margin:60px;
-    margin-bottom:0px;
-}
-h3{
-    margin:0px 0px 90px 60px;
-    position: absolute;
-    bottom:0px;
-    font-size: x-large;
-    color: #f47027;
-}
-h4{
-    font-size:20px;
-    margin:60px;
-   margin-top:10px;
-   width:430px;
-}
-#top{
-    border-bottom:2px solid #f47027;
-    padding:100px 0px 5px 30px;
-}
-footer{
-    position: absolute;
-    bottom: 0px;
-    border-top:2px solid #f47027;
-    padding-top:10px;
-    width:726px;
-}
-#HASH {
-    display: flex;
-    justify-content: space-between;
-}
-  #HASH span{
-    margin:10px 0px 20px 60px;
-    font-size: xx-large;
-    font-weight: bold;
-  }
-  #end{
-    padding-right:60px;
-  }
   
   
-  OUTPUT:
+  # OUTPUT:
   ![front page](https://user-images.githubusercontent.com/119643845/215045906-06a9270c-e58b-43a5-9707-5f3771927677.png)
 
 
-  RESULT:
+
+
+
+  # RESULT:
   This program was executed successfully.
