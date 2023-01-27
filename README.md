@@ -3,9 +3,10 @@
 
 
 # Design Steps:
-Step 1:
+## Step 1:
 Clone the GitHub repository and create a Django admin interface.
-Step 2:
+
+## Step 2:
 Write HTML and CSS Code for designing book cover page and execute them.
 
 
